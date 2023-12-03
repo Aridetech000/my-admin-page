@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.Sign-page1{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, navy, #fec702);
+    position: relative;
+}
+.sign-page1-box{
+    min-height: 95vh;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 10px 20px;
+    backdrop-filter: blur(200px);
+    border: 2px solid #ffffff38;
+}
+.sign-page1-box h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 2vw;
+    color: #000080;
+}
+.sign-page1-box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fo-inp{
+    height: 43px;
+    width: 27vw;
+    font-size: 15px;
+    padding: 0px 5px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.button{
+    cursor: pointer;
+    height: 43px;
+    width: 27vw;
+    font-size: 15px;
+    border-radius: 6px;
+    background-color: #000080;
+    color: #fff;
+    border: none;
+}
+.sign-page1-box h4{
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
+    font-size: 1.2vw;
+}
+.sign-page1-box h4 a{
+    text-decoration: none;
+}
+
+@media(max-width: 500px){
+    .sign-page1-box{
+        /* min-height: 60vh; */
+        width: 90%;
+    }
+    .fo-inp{
+        width: 80vw;
+    }
+    .Sign-page1{
+        padding: 50px;
+    }
+    .sign-page1-box{
+        padding-top: 80px;
+        min-height: 85%;
+    }
+    .sign-page1-box h2{
+        font-size: 10vw;
+    }
+    .sign-page1-box h4{
+        font-size: 4.4vw;
+    }
+}

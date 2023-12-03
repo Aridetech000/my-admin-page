@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+@font-face {
+    font-family: tnr;
+    src: url("/times\ new\ roman.ttf");
+}
+
+@font-face {
+    font-family: tnrb;
+    src: url("/times\ new\ roman\ bold.ttf");
+}
+
+@font-face {
+    font-family: tnri;
+    src: url("/times\ new\ roman\ italic.ttf");
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#imgslid{
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    background-image: url(../image/student.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-blend-mode: darken;
+    background-color: #00000082;
+}
+
+.about-inner{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50%;
+    width: 60%;
+    /* background-color: blue; */
+    /* z-index: 999999; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+}
+.about-inner h1{
+    font-size: 4vw;
+    color: #fff;
+    font-family: 'tnrb';
+}
+.about-inner span{
+    height: 60px;
+    width: 272px;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+    position: relative;
+    z-index: 99999;
+}
+.home-about-inner{
+    display: flex;
+
+}
+.home-about-inner a{
+    text-decoration: none;
+    color: #fff;
+}
+.home-about-inner h2{
+    color: #fff;
+}
